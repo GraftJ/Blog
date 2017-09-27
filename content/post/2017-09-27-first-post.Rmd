@@ -1,0 +1,16 @@
+---
+title: First Post
+author: Jenny Graft
+date: '2017-09-27'
+slug: first-post
+categories:
+  - R
+tags:
+  - xxx
+---
+
+This is my first blog posst.
+
+```{r}
+cat("Hello, World!")
+```
