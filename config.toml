@@ -13,7 +13,7 @@ title = "SublimeR Hugo"
 
 # Enable comments by entering your Disqus shortname
 # (Sign up at https://disqus.com/):
-# disqusShortname = ""
+disqusShortname = "graftj-blog1"
 
 # Enable Google Analytics by entering your tracking code
 # googleAnalytics = ""
