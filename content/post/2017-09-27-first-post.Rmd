@@ -10,7 +10,7 @@ tags:
 comments: true
 ---
 
-This is my first blog posst.
+This is my first blog post.
 
 ```{r}
 cat("Hello, World!")
