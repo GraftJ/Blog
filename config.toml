@@ -24,7 +24,7 @@ theme = "sublimer-hugo"
 	post = "/:year/:month/:day/:slug"
 
 [params]
-	name = "Homer White"
+	name = "Jenny Graft"
 	
 	# The following appears in the <meta> tag by default (unless
 	# overriden by description: "whatever you like" in YAML front-matter
@@ -63,8 +63,8 @@ theme = "sublimer-hugo"
 
 [params.offcanvas]
 	# Menu items
-	title = "Hello, I'm Homer White"
-	bio = "I teach mathematics and computer science at a small liberal arts college in Kentucky.  In the summer I hack at garden hedges and front ends."
+	title = "Hello, I'm Jenny Graft"
+	bio = "I'm a student at Georgetown College studying graphic design and computer science."
 	# Another biographical paragraph, if you like:
 	bio2 = ""
 	subscribe = "Subscribe"
@@ -83,10 +83,10 @@ theme = "sublimer-hugo"
 	  # The text for the link to your email:
 		name = "Email"
 		# put your email here:
-		url = "mailto:person@example.com"
+		url = "mailto:jenny.graft@gmail.com"
 		
 		# replace "homerhanumat" with your github username:
-		github = "homerhanumat"
+		github = "GraftJ"
 		
 		# If you want to link to your FB page, provide your username here.
 		# (It's at the end of your FB page URL.)
