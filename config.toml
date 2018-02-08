@@ -9,15 +9,15 @@ baseurl = "/"
 languageCode = "en-us"
 
 # choose a good title for your site:
-title = "SublimeR Hugo"
+title = "Graft and Design Blog"
 
 # Enable comments by entering your Disqus shortname
 # (Sign up at https://disqus.com/):
-disqusShortname = "graftj-blog1"
+disqusShortname = "graftj-blog"
 
 # Enable Google Analytics by entering your tracking code
 # googleAnalytics = ""
-paginate = 50
+paginate = 10
 theme = "sublimer-hugo"
 
 [permalinks]
