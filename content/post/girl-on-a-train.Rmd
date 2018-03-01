@@ -2,7 +2,7 @@
 title: First Post
 author: Jenny Graft
 date: '2018-03-01'
-slug: first-post
+slug: Girl on a Train
 categories:
   - R
 tags:
