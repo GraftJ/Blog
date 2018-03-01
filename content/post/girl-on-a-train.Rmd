@@ -1,0 +1,46 @@
+---
+title: First Post
+author: Jenny Graft
+date: '2018-03-01'
+slug: first-post
+categories:
+  - R
+tags:
+  - xxx
+comments: true
+---
+
+```{r setup, include = FALSE}
+library(tigerData)
+library(stringr)
+library(tidyverse)
+```
+
+```{r}
+traingirl <- subset(reviews, book == "traingirl")
+
+traingirl$content[10]
+```
+
+```{r}
+linkPattern <- "(?<=<a class=\"\"a-link-normal\"\" href=\"\"/)(.+?)(?=\"\">)"
+
+traingirlLinks <-
+  traingirl %>% 
+  mutate(linkCount = str_count(content, linkPattern))
+
+traingirlLinks %>% 
+  group_by(linkCount) %>% 
+  summarise(n = n()) %>% 
+  knitr::kable(caption=str_c("Table showing number of links made by reviewers about the Girl on a Train."))
+```
+
+```{r}
+traingirlLinks %>% 
+  filter(linkCount == max(linkCount)) %>%
+  .$content %>%
+  str_extract_all(pattern = linkPattern) %>%
+  unlist() %>%
+  str_c("http://www.amazon.com/", .)
+```
+
