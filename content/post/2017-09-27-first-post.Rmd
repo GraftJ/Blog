@@ -1,8 +1,8 @@
 ---
-title: First Post
-author: Jenny Graft
+title: "First Post"
+author: "Jenny Graft"
 date: '2017-09-27'
-slug: first-post
+slug: "first-post"
 categories:
   - R
 tags:

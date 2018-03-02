@@ -1,19 +1,23 @@
 ---
-title: First Post
-author: Jenny Graft
+title: "Girl on a Train Reviews"
+author: "Jenny Graft"
 date: '2018-03-01'
-slug: Girl on a Train
+comments: true
+slug: Girl-on-a-Train
+tags: 
+  - traingirl
+  - homework
 categories:
   - R
-tags:
-  - xxx
-comments: true
 ---
 
 ```{r setup, include = FALSE}
 library(tigerData)
 library(stringr)
 library(tidyverse)
+library(knitr)
+library(kableExtra)
+options(knitr.table.format = "html")
 ```
 
 ```{r}
@@ -32,7 +36,8 @@ traingirlLinks <-
 traingirlLinks %>% 
   group_by(linkCount) %>% 
   summarise(n = n()) %>% 
-  knitr::kable(caption=str_c("Table showing number of links made by reviewers about the Girl on a Train."))
+  knitr::kable() %>% 
+  kable_styling(bootstrap_options = c("striped", "hover"))
 ```
 
 ```{r}
