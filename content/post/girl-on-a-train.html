@@ -26,9 +26,8 @@ traingirlLinks &lt;-
 traingirlLinks %&gt;% 
   group_by(linkCount) %&gt;% 
   summarise(n = n()) %&gt;% 
-  knitr::kable() %&gt;% 
-  kable_styling(bootstrap_options = c(&quot;striped&quot;, &quot;hover&quot;))</code></pre>
-<table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
+  knitr::kable()</code></pre>
+<table>
 <thead>
 <tr>
 <th style="text-align:right;">

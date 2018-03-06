@@ -16,7 +16,6 @@ library(tigerData)
 library(stringr)
 library(tidyverse)
 library(knitr)
-library(kableExtra)
 options(knitr.table.format = "html")
 ```
 
@@ -36,8 +35,7 @@ traingirlLinks <-
 traingirlLinks %>% 
   group_by(linkCount) %>% 
   summarise(n = n()) %>% 
-  knitr::kable() %>% 
-  kable_styling(bootstrap_options = c("striped", "hover"))
+  knitr::kable()
 ```
 
 ```{r}
@@ -48,4 +46,5 @@ traingirlLinks %>%
   unlist() %>%
   str_c("http://www.amazon.com/", .)
 ```
+
 
